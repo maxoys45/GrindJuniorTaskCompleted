@@ -1,0 +1,95 @@
+// Rudimentary reset
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$radius-default: 6px;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #EAEAEA;
+}
+
+h1,
+h2 {
+  margin-bottom: .5em;
+}
+
+.container {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.form {
+  display: flex;
+  gap: 1rem;
+
+  &__input {
+    padding: 1rem;
+    border: 1px solid #444;
+    border-radius: $radius-default;
+    width: 20%;
+  }
+
+  &__btn {
+    width: 100%;
+    border: 0;
+    padding: 1rem;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: $radius-default;
+    background: #222;
+    color: #FFF;
+  }
+}
+
+.search-results {
+  margin-top: 1rem;
+}
+
+.person {
+  background: #f9f9f9;
+  border-radius: $radius-default;
+  display: flex;
+  overflow: hidden;
+}
+
+.thumb {
+  max-width: 100px;
+  width: 100%;
+  display: block;
+}
+
+.content {
+  flex-grow: 1;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  margin-bottom: 0;
+  background: #222;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.contact-info {
+  flex-grow: 1;
+  padding: 0.5rem;
+  line-height: 1.5;
+}
+
+.error {
+  padding: 0.5rem;
+  background-color: rgba(red, 0.2);
+  color: red;
+  border-radius: $radius-default;
+}
